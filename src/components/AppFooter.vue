@@ -6,10 +6,10 @@
 <template>
     <!-- Footer -->
     <footer class="page-footer">
-        <!-- Footer Top -->
-        <div class="footer-top">
-            <!-- Container -->
-            <div class="container">
+        <!-- Container -->
+        <div class="container">
+            <!-- Footer Top -->
+            <div class="footer-top">
                 <!-- Informazioni -->
                 <div class="infos">
                     <!-- Box informazione -->
@@ -95,6 +95,11 @@
                         </ul>
                     </div>
                 </div>
+                <!-- Logo grande -->
+                <div class="big-logo">
+                    <!-- Immagine -->
+                    <img class="big-logo__img" src="../assets/img/dc-logo-bg.png" alt="Big Logo">
+                </div>
             </div>
         </div>
         <!-- Footer Bottom -->
@@ -109,6 +114,11 @@
     /* Footer */
     .page-footer {
         background-image: url("../assets/img/footer-bg.jpg");
+    }
+    /* Footer Top */
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
     }
     /* Informazioni */
     .infos {
@@ -129,5 +139,17 @@
         color: var(--light-grey);
         font-size: 14px;
         margin-bottom: 5px;
+    }
+    /* Logo grande */
+    .big-logo {
+        position: relative;
+    }
+    /* Immagine del logo grande */
+    .big-logo__img {
+        width: 550px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        right: 0px;
+        top: -50px;
     }
 </style>

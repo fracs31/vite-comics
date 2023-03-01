@@ -1,0 +1,24 @@
+/* Regole generali */
+:root {
+  --dark-grey: #303030;
+  --grey: #464646;
+  --light-grey: #959595;
+  --black: #1C1C1C;
+  --blue: #0282F9;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, menu {
+  list-style-type: none;
+}
+
+/* Container */
+.container {
+  max-width: 1300px;
+  margin: 0px auto;
+}

@@ -20,7 +20,7 @@
                     <!-- Elemento della lista -->
                     <li class="navbar__list--item">Characters</li>
                     <!-- Elemento della lista -->
-                    <li class="navbar__list--item">Comics</li>
+                    <li class="navbar__list--item active">Comics</li>
                     <!-- Elemento della lista -->
                     <li class="navbar__list--item">Movies</li>
                     <!-- Elemento della lista -->
@@ -45,4 +45,39 @@
 
 <!-- CSS -->
 <style scoped>
+    /* Header */
+    .main-header {
+        background-color: white;
+        padding: 20px 0px;
+    }
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Immagine usata come logo */
+    .navbar__logo--img {
+        width: 80px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+    /* Lista della Navbar */
+    .navbar__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    /* Elementi della lista della Navbar */
+    .navbar__list--item {
+        text-transform: uppercase;
+        color: var(--grey);
+        font-size: 14px;
+        padding: 40px 0px;
+    }
+    /* Active */
+    .active {
+        color: var(--blue);
+        border-bottom: 3px solid var(--blue);
+    }
 </style>

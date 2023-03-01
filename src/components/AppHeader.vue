@@ -75,9 +75,20 @@
         font-size: 14px;
         padding: 40px 0px;
     }
-    /* Active */
-    .active {
+    /* Elemento della lista della Navbar attivo */
+    .navbar__list-item.active {
         color: var(--blue);
-        border-bottom: 3px solid var(--blue);
+        position: relative;
+    }
+    /* Barra dell'elemento della lista della Navbar attivo */
+    .navbar__list-item.active::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--blue);
+        position: absolute;
+        left: 0px;
+        bottom: -20px;
     }
 </style>

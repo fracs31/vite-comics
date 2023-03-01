@@ -205,6 +205,7 @@
     .subscription {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     /* Bottone */
     .sign-up {

@@ -1,10 +1,12 @@
 <!-- JavaScript -->
 <script>
-import AppHeader from "./components/AppHeader.vue";
+import AppHeader from "./components/AppHeader.vue"; //importo "AppHeader"
 
+//Esporto
 export default {
+  //Componenti
   components: {
-    AppHeader,
+    AppHeader, //AppHeader
   }
 }
 
@@ -12,6 +14,7 @@ export default {
 
 <!-- Template -->
 <template>
+  <!-- Header -->
   <AppHeader></AppHeader>
 </template>
 

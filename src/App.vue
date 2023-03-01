@@ -1,12 +1,14 @@
 <!-- JavaScript -->
 <script>
 import AppHeader from "./components/AppHeader.vue"; //importo "AppHeader"
+import AppMain from "./components/AppMain.vue"; //importo "AppMain"
 
 //Esporto
 export default {
   //Componenti
   components: {
     AppHeader, //AppHeader
+    AppMain, //AppMain
   }
 }
 
@@ -16,6 +18,8 @@ export default {
 <template>
   <!-- Header -->
   <AppHeader></AppHeader>
+  <!-- Main -->
+  <AppMain></AppMain>
 </template>
 
 <!-- CSS -->

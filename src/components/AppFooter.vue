@@ -104,7 +104,49 @@
         </div>
         <!-- Footer Bottom -->
         <div class="footer-bottom">
-            
+            <!-- Container -->
+            <div class="container">
+                <!-- Sottoiscrizione -->
+                <div class="subscription">
+                    <!-- Bottone -->
+                    <button class="sign-up">
+                        Sign-up now!
+                    </button>
+                    <!-- Seguici -->
+                    <div class="follow-us">
+                        <!-- Sottotitolo -->
+                        <h4 class="follow-us__title">Follow Us</h4>
+                        <!-- Lista -->
+                        <ul class="follow-us__list">
+                            <!-- Elemento della lista -->
+                            <li class="follow-us__list-item">
+                                <!-- Immagine -->
+                                <img class="follow-us__list-item--img" src="../assets/img/footer-facebook.png" alt="Facebook">
+                            </li>
+                            <!-- Elemento della lista -->
+                            <li class="follow-us__list-item">
+                                <!-- Immagine -->
+                                <img class="follow-us__list-item--img" src="../assets/img/footer-twitter.png" alt="Twitter">
+                            </li>
+                            <!-- Elemento della lista -->
+                            <li class="follow-us__list-item">
+                                <!-- Immagine -->
+                                <img class="follow-us__list-item--img" src="../assets/img/footer-youtube.png" alt="YouTube">
+                            </li>
+                            <!-- Elemento della lista -->
+                            <li class="follow-us__list-item">
+                                <!-- Immagine -->
+                                <img class="follow-us__list-item--img" src="../assets/img/footer-pinterest.png" alt="Pinterest">
+                            </li>
+                            <!-- Elemento della lista -->
+                            <li class="follow-us__list-item">
+                                <!-- Immagine -->
+                                <img class="follow-us__list-item--img" src="../assets/img/footer-periscope.png" alt="Periscope">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </template>
@@ -151,5 +193,49 @@
         position: absolute;
         right: 0px;
         top: -50px;
+    }
+    /* Footer Bottom */
+    .footer-bottom {
+        background-color: var(--dark-grey);
+        padding: 30px 0px;
+        position: relative;
+        z-index: 1;
+    }
+    /* Sottoiscrizione */
+    .subscription {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Bottone */
+    .sign-up {
+        font-size: 18px;
+        color: white;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 1px solid var(--blue);
+        padding: 15px 10px;
+    }
+    /* Seguici */
+    .follow-us {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    /* Titolo di Seguici */
+    .follow-us__title {
+        color: var(--blue);
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    /* Lista dei social */
+    .follow-us__list {
+        display: flex;
+        gap: 15px;
+    }
+    /* Immagine dell'elemento della lista dei social */
+    .follow-us__list-item--img {
+        width: 35px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
     }
 </style>

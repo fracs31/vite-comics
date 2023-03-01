@@ -98,6 +98,8 @@
     .discover {
         background-color: var(--blue);
         padding: 45px 0px;
+        position: relative;
+        z-index: 1;
     }
     /* Lista di Discover */
     .discover__list {

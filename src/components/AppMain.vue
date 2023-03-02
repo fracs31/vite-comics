@@ -18,10 +18,13 @@ export default {
     <main class="main-content">
         <!-- Contenuto -->
         <div class="content">
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <!-- Immagine -->
+                <img class="jumbotron__img" src="../assets/img/jumbotron.jpg" alt="Jumbotron">
+            </div>
             <!-- Container -->
             <div class="container">
-                <!-- Titolo -->
-                <h1>-- Content goes here --</h1>
             </div>
         </div>
         <!-- Discover -->
@@ -34,7 +37,18 @@ export default {
     /* Contenuto */
     .content {
         background-color: var(--black);
-        padding: 45px 0px;
         color: white;
+    }
+    /* Jumbotron */
+    .jumbotron {
+        height: 400px;
+        width: 100%;
+    }
+    /* Immagine del Jumbotron */
+    .jumbotron__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
     }
 </style>

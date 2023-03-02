@@ -1,5 +1,57 @@
 <!-- JavaScript -->
 <script>
+
+//Esporto
+export default {
+    data() {
+        return {
+            //Elementi della lista dalla navbar
+            navbarListItems: [
+                {
+                    fullName: "Characters", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "Comics", //nome
+                    active: true, //classe attiva
+                },
+                {
+                    fullName: "Movies", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "TV", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "Games", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "Collectibles", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "Videos", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "Fans", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "News", //nome
+                    active: false, //classe attiva
+                },
+                {
+                    fullName: "Shop", //nome
+                    active: false, //classe attiva
+                },
+            ],
+        }
+    }
+};
+
 </script>
 
 <!-- Template -->
@@ -18,25 +70,9 @@
                 <!-- Lista -->
                 <ul class="navbar__list">
                     <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Characters</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item active">Comics</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Movies</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Tv</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Games</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Collectibles</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Videos</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Fans</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">News</li>
-                    <!-- Elemento della lista -->
-                    <li class="navbar__list-item">Shop</li>
+                    <li class="navbar__list-item" v-for="(item) in navbarListItems" v-bind:class="(item.active) ? 'active' : ''">
+                        {{ item.fullName  }}
+                    </li>
                 </ul>
             </nav>
         </div>

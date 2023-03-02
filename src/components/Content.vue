@@ -57,9 +57,9 @@
 <style scoped>
     /* Contenuto */
     .content {
-            background-color: var(--black);
-            color: white;
-        }
+        background-color: var(--black);
+        color: white;
+     }
     /* Jumbotron */
     .jumbotron {
         height: 400px;

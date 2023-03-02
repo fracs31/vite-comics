@@ -1,6 +1,6 @@
 <!-- JavaScript -->
 <script>
-import Discover from "./Content.vue"; //importo "Content.vue"
+import Content from "./Content.vue"; //importo "Content.vue"
 import Discover from "./Discover.vue"; //importo "Discover.vue"
 
 //Esporto
@@ -27,5 +27,5 @@ export default {
 
 <!-- CSS -->
 <style scoped>
-
+    
 </style>

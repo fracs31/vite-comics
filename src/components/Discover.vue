@@ -1,5 +1,37 @@
 <!-- JavaScript -->
 <script>
+
+//Esporto
+export default {
+    data() {
+        return {
+            //Elementi della lista di Discover
+            discoverListItems: [
+                {
+                    img: "../src/assets/img/buy-comics-digital-comics.png", //immagine
+                    description: "Digital Comics", //descrizione
+                },
+                {
+                    img: "../src/assets/img/buy-comics-merchandise.png", //immagine
+                    description: "DC Merchandise", //descrizione
+                },
+                {
+                    img: "../src/assets/img/buy-comics-subscriptions.png", //immagine
+                    description: "Subscription", //descrizione
+                },
+                {
+                    img: "../src/assets/img/buy-comics-shop-locator.png", //immagine
+                    description: "Comic Shop Locator", //descrizione
+                },
+                {
+                    img: "../src/assets/img/buy-dc-power-visa.svg", //immagine
+                    description: "DC Power Visa", //descrizione
+                },
+            ]
+        }
+    }
+};
+
 </script>
 
 <!-- Template -->
@@ -11,63 +43,15 @@
             <!-- Lista -->
             <ul class="discover__list">
                 <!-- Elemento della lista -->
-                <li class="discover__list-item">
+                <li class="discover__list-item" v-for="(item) in discoverListItems">
                     <!-- Immagine -->
                     <div class="discover__list-item--img">
                         <!-- Immagine -->
-                        <img class="discover__list-item--img__img" src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
+                        <img class="discover__list-item--img__img" v-bind:src="item.img" v-bind:alt="item.description">
                     </div>
                     <!-- Descrizione -->
                     <div class="discover__list-item--description">
-                        Digital Comics
-                    </div>
-                </li>
-                <!-- Elemento della lista -->
-                <li class="discover__list-item">
-                    <!-- Immagine -->
-                    <div class="discover__list-item--img">
-                        <!-- Immagine -->
-                        <img class="discover__list-item--img__img" src="../assets/img/buy-comics-merchandise.png" alt="DC Merchandise">
-                    </div>
-                    <!-- Descrizione -->
-                    <div class="discover__list-item--description">
-                        DC Merchandise
-                    </div>
-                </li>
-                <!-- Elemento della lista -->
-                <li class="discover__list-item">
-                    <!-- Immagine -->
-                    <div class="discover__list-item--img">
-                        <!-- Immagine -->
-                        <img class="discover__list-item--img__img" src="../assets/img/buy-comics-subscriptions.png" alt="Subscription">
-                    </div>
-                    <!-- Descrizione -->
-                    <div class="discover__list-item--description">
-                        Subscription
-                    </div>
-                </li>
-                <!-- Elemento della lista -->
-                <li class="discover__list-item">
-                    <!-- Immagine -->
-                    <div class="discover__list-item--img">
-                        <!-- Immagine -->
-                        <img class="discover__list-item--img__img" src="../assets/img/buy-comics-shop-locator.png" alt="Comic Shop Locator">
-                    </div>
-                    <!-- Descrizione -->
-                    <div class="discover__list-item--description">
-                        Comic Shop Locator
-                    </div>
-                </li>
-                <!-- Elemento della lista -->
-                <li class="discover__list-item">
-                    <!-- Immagine -->
-                    <div class="discover__list-item--img">
-                        <!-- Immagine -->
-                        <img class="discover__list-item--img__img" src="../assets/img/buy-dc-power-visa.svg" alt="DC Power Visa">
-                    </div>
-                    <!-- Descrizione -->
-                    <div class="discover__list-item--description">
-                        DC Power Visa
+                        {{ item.description }}
                     </div>
                 </li>
             </ul>

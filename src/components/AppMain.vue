@@ -27,6 +27,10 @@ export default {
             <div class="current-series">
                 <!-- Container -->
                 <div class="container">
+                    <!-- Titolo -->
+                    <h2 class="current-series__title">
+                        Current Series
+                    </h2>
                     <!-- Lista -->
                     <ul class="current-series__list">
                         <!-- Elemento della lista -->
@@ -183,8 +187,20 @@ export default {
         object-fit: cover;
         object-position: top;
     }
+    /* Titolo di Current Series */
+    .current-series__title {
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: var(--blue);
+        max-width: fit-content;
+        padding: 15px 10px;
+        position: relative;
+        top: -25px;
+        z-index: 1;
+    }
     /* Lista delle serie */
     .current-series__list {
+        padding-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
         gap: 50px 25px;

@@ -1,5 +1,56 @@
 <!-- JavaScript -->
 <script>
+
+//Esporto
+export default {
+    data() {
+        return {
+            //Info box
+            infoBoxes: [
+                {
+                    title: "Dc Comics", //titolo
+                    listItems: ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"], //elementi della lista
+                },
+                {
+                    title: "DC", //titolo
+                    listItems: ["Terms Of Use", "Privacy policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Rating", "Shop Help", "Contact Us"], //elementi della lista
+                },
+                {
+                    title: "Sites", //titolo
+                    listItems: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"], //elementi della lista
+                },
+                {
+                    title: "Shop", //titolo
+                    listItems: ["Shop DC", "MAD Shop DC Collectibles"], //elementi della lista
+                }
+            ],
+            //Social
+            socials: [
+                {
+                    fullName: "Facebook", //nome
+                    img: "../src/assets/img/footer-facebook.png", //immagine
+                },
+                {
+                    fullName: "Twitter", //nome
+                    img: "../src/assets/img/footer-twitter.png", //immagine
+                },
+                {
+                    fullName: "YouTube", //nome
+                    img: "../src/assets/img/footer-youtube.png", //immagine
+                },
+                {
+                    fullName: "Pinterest", //nome
+                    img: "../src/assets/img/footer-pinterest.png", //immagine
+                },
+                {
+                    fullName: "Periscope", //nome
+                    img: "../src/assets/img/footer-periscope.png", //immagine
+                },
+            ],
+        }
+    }
+};
+
 </script>
 
 <!-- Template -->
@@ -13,85 +64,15 @@
                 <!-- Informazioni -->
                 <div class="infos">
                     <!-- Box informazione -->
-                    <div class="box-info">
+                    <div class="box-info" v-for="(infoBox) in infoBoxes">
                         <!-- Sottotitolo -->
-                        <h3 class="box-info__title">Dc Comics</h3>
+                        <h3 class="box-info__title">{{ infoBox.title }}</h3>
                         <!-- Lista -->
                         <ul class="box-info__list">
                             <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Characters</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Comics</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Movies</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">TV</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Games</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Videos</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">News</li>
-                        </ul>
-                    </div>
-                    <!-- Box informazione -->
-                    <div class="box-info">
-                        <!-- Sottotitolo -->
-                        <h3 class="box-info__title">DC</h3>
-                        <!-- Lista -->
-                        <ul class="box-info__list">
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Terms Of Use</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Privacy policy (New)</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Ad Choices</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Advertising</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Jobs</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Subscriptions</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Talent Workshops</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">CPSC Certificates</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Rating</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Shop Help</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Contact Us</li>
-                        </ul>
-                    </div>
-                    <!-- Box informazione -->
-                    <div class="box-info">
-                        <!-- Sottotitolo -->
-                        <h3 class="box-info__title">Sites</h3>
-                        <!-- Lista -->
-                        <ul class="box-info__list">
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">DC</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">MAD Magazine</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">DC Kids</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">DC Universe</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">DC Power Visa</li>
-                        </ul>
-                    </div>
-                    <!-- Box informazione -->
-                    <div class="box-info">
-                        <!-- Sottotitolo -->
-                        <h3 class="box-info__title">Shop</h3>
-                        <!-- Lista -->
-                        <ul class="box-info__list">
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Shop DC</li>
-                            <!-- Elemento della lista -->
-                            <li class="box-info__list-item">Shop DC Collectibles</li>
+                            <li class="box-info__list-item" v-for="(item) in infoBox.listItems">
+                                {{ item }}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -119,29 +100,9 @@
                         <!-- Lista -->
                         <ul class="follow-us__list">
                             <!-- Elemento della lista -->
-                            <li class="follow-us__list-item">
+                            <li class="follow-us__list-item" v-for="(social) in socials">
                                 <!-- Immagine -->
-                                <img class="follow-us__list-item--img" src="../assets/img/footer-facebook.png" alt="Facebook">
-                            </li>
-                            <!-- Elemento della lista -->
-                            <li class="follow-us__list-item">
-                                <!-- Immagine -->
-                                <img class="follow-us__list-item--img" src="../assets/img/footer-twitter.png" alt="Twitter">
-                            </li>
-                            <!-- Elemento della lista -->
-                            <li class="follow-us__list-item">
-                                <!-- Immagine -->
-                                <img class="follow-us__list-item--img" src="../assets/img/footer-youtube.png" alt="YouTube">
-                            </li>
-                            <!-- Elemento della lista -->
-                            <li class="follow-us__list-item">
-                                <!-- Immagine -->
-                                <img class="follow-us__list-item--img" src="../assets/img/footer-pinterest.png" alt="Pinterest">
-                            </li>
-                            <!-- Elemento della lista -->
-                            <li class="follow-us__list-item">
-                                <!-- Immagine -->
-                                <img class="follow-us__list-item--img" src="../assets/img/footer-periscope.png" alt="Periscope">
+                                <img class="follow-us__list-item--img" v-bind:src="social.img" v-bind:alt="social.fullName">
                             </li>
                         </ul>
                     </div>

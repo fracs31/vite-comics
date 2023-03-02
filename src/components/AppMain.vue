@@ -160,6 +160,13 @@ export default {
                             </div>
                         </li>
                     </ul>
+                    <!-- Bottone -->
+                    <div class="current-series__button">
+                        <!-- Bottone effettivo -->
+                        <button class="current-series__button--btn">
+                            Load more
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -221,5 +228,20 @@ export default {
         text-transform: uppercase;
         font-weight: normal;
         font-size: 16px;
+    }
+    /* Bottone */
+    .current-series__button {
+        display: flex;
+        justify-content: center;
+    }
+    /* Bottone effettivo */
+    .current-series__button--btn {
+        text-transform: uppercase;
+        background-color: var(--blue);
+        border: none;
+        color: white;
+        font-size: 14px;
+        padding: 15px 60px;
+        margin-bottom: 20px;
     }
 </style>

@@ -33,13 +33,17 @@ export default {
 
 <!-- CSS -->
 <style scoped>
+    /* Carta */
+    .card {
+        width: 185px;
+    }
     /* Immagine della carta */
     .card__img {
         margin-bottom: 15px;
     }
     /* Immagine usata della carta */
     .card__img--img {
-        width: 185px;
+        width: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
         object-position: top;
@@ -48,6 +52,7 @@ export default {
     .card__title--title {
         text-transform: uppercase;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 14px;
+        color: white;
     }
 </style>

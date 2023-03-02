@@ -1,5 +1,22 @@
 <!-- JavaScript -->
 <script>
+import Card from "./Card.vue"; //importo la carta
+import comics from '../assets/dc-comics.json' assert { type: 'JSON' }; //importo il file JSON
+
+//Esporto
+export default {
+    //Componenti
+    components: {
+        Card, //carta
+    },
+    //Dati
+    data() {
+        return {
+            comics, //comics
+            imageTest: "../src/assets/img/prova.jpg", //immagine test
+        }
+    }
+};
 
 </script>
 
@@ -23,7 +40,9 @@
                 <!-- Lista -->
                 <ul class="current-series__list">
                     <!-- Elemento della lista -->
-                    <li class="current-series__list-item">
+                    <li class="current-series__list-item" v-for="(comic) in comics">
+                        <!-- Carta -->
+                        <Card v-bind:thumb="imageTest" v-bind:series="comic.series"></Card>
                     </li>
                 </ul>
                 <!-- Bottone -->

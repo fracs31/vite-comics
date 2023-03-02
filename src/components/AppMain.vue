@@ -23,8 +23,140 @@ export default {
                 <!-- Immagine -->
                 <img class="jumbotron__img" src="../assets/img/jumbotron.jpg" alt="Jumbotron">
             </div>
-            <!-- Container -->
-            <div class="container">
+            <!-- Serie -->
+            <div class="current-series">
+                <!-- Container -->
+                <div class="container">
+                    <!-- Lista -->
+                    <ul class="current-series__list">
+                        <!-- Elemento della lista -->
+                        <li class="current-series__list-item">
+                            <!-- Carta -->
+                            <div class="card">
+                                <!-- Immagine della carta-->
+                                <div class="card__img">
+                                    <!-- Immagine -->
+                                    <img class="card__img--img" src="../assets/img/prova.jpg" alt="">
+                                </div>
+                                <!-- Titolo della carta -->
+                                <div class="card__title">
+                                    <!-- Titolo -->
+                                    <h3 class="card__title--title">
+                                        Action Comics
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Elemento della lista -->
+                        <li class="current-series__list-item">
+                            <!-- Carta -->
+                            <div class="card">
+                                <!-- Immagine della carta-->
+                                <div class="card__img">
+                                    <!-- Immagine -->
+                                    <img class="card__img--img" src="../assets/img/prova.jpg" alt="">
+                                </div>
+                                <!-- Titolo della carta -->
+                                <div class="card__title">
+                                    <!-- Titolo -->
+                                    <h3 class="card__title--title">
+                                        Action Comics
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Elemento della lista -->
+                        <li class="current-series__list-item">
+                            <!-- Carta -->
+                            <div class="card">
+                                <!-- Immagine della carta-->
+                                <div class="card__img">
+                                    <!-- Immagine -->
+                                    <img class="card__img--img" src="../assets/img/prova.jpg" alt="">
+                                </div>
+                                <!-- Titolo della carta -->
+                                <div class="card__title">
+                                    <!-- Titolo -->
+                                    <h3 class="card__title--title">
+                                        Action Comics
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Elemento della lista -->
+                        <li class="current-series__list-item">
+                            <!-- Carta -->
+                            <div class="card">
+                                <!-- Immagine della carta-->
+                                <div class="card__img">
+                                    <!-- Immagine -->
+                                    <img class="card__img--img" src="../assets/img/prova.jpg" alt="">
+                                </div>
+                                <!-- Titolo della carta -->
+                                <div class="card__title">
+                                    <!-- Titolo -->
+                                    <h3 class="card__title--title">
+                                        Action Comics
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Elemento della lista -->
+                        <li class="current-series__list-item">
+                            <!-- Carta -->
+                            <div class="card">
+                                <!-- Immagine della carta-->
+                                <div class="card__img">
+                                    <!-- Immagine -->
+                                    <img class="card__img--img" src="../assets/img/prova.jpg" alt="">
+                                </div>
+                                <!-- Titolo della carta -->
+                                <div class="card__title">
+                                    <!-- Titolo -->
+                                    <h3 class="card__title--title">
+                                        Action Comics
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Elemento della lista -->
+                        <li class="current-series__list-item">
+                            <!-- Carta -->
+                            <div class="card">
+                                <!-- Immagine della carta-->
+                                <div class="card__img">
+                                    <!-- Immagine -->
+                                    <img class="card__img--img" src="../assets/img/prova.jpg" alt="">
+                                </div>
+                                <!-- Titolo della carta -->
+                                <div class="card__title">
+                                    <!-- Titolo -->
+                                    <h3 class="card__title--title">
+                                        Action Comics
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Elemento della lista -->
+                        <li class="current-series__list-item">
+                            <!-- Carta -->
+                            <div class="card">
+                                <!-- Immagine della carta-->
+                                <div class="card__img">
+                                    <!-- Immagine -->
+                                    <img class="card__img--img" src="../assets/img/prova.jpg" alt="">
+                                </div>
+                                <!-- Titolo della carta -->
+                                <div class="card__title">
+                                    <!-- Titolo -->
+                                    <h3 class="card__title--title">
+                                        Action Comics
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Discover -->
@@ -50,5 +182,28 @@ export default {
         height: 100%;
         object-fit: cover;
         object-position: top;
+    }
+    /* Lista delle serie */
+    .current-series__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 25px;
+    }
+    /* Immagine della carta */
+    .card__img {
+        margin-bottom: 15px;
+    }
+    /* Immagine usata della carta */
+    .card__img--img {
+        width: 185px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: top;
+    }
+    /* Titolo usato della carta */
+    .card__title--title {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 16px;
     }
 </style>
